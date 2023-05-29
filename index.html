@@ -27,36 +27,27 @@
     .item input[type="checkbox"] {
       margin-right: 10px;
     }
+    .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Distribui as colunas igualmente */
+  grid-gap: 10px; /* Define o espaçamento entre as colunas */
+}
+
+.column {
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
   </style>
 </head>
 <body>
   <h1>Lista de Compras</h1>
   
-  <div class="shopping-list">
-    <div class="item">
-      <input type="checkbox">
-      <span>Pão</span>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <span>Leite</span>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <span>Ovos</span>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <span>Frutas</span>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <span>Legumes</span>
-    </div>
-  </div>
+  <div class="grid-container">
+  <div class="column">Coluna 1</div>
+  <div class="column">Coluna 2</div>
+  <div class="column">Coluna 3</div>
+</div>
+
 </body>
 </html>
