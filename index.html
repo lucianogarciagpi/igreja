@@ -13,51 +13,31 @@
       text-align: center;
     }
     
-    .shopping-list {
-      width: 300px;
-      margin: 0 auto;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
     }
     
     .item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
+      background-color: #e0e0e0;
+      padding: 10px;
     }
-    
-    .item input[type="checkbox"] {
-      margin-right: 10px;
-    }
-    .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Distribui as colunas igualmente */
-  grid-gap: 10px; /* Define o espaçamento entre as colunas */
-}
-
-.column {
-  background-color: #e0e0e0;
-  padding: 10px;
-}
-
   </style>
 </head>
 <body>
   <h1>Lista de Compras</h1>
   
-<div class="grid-container">
-  <div class="column">ITEM</div>
-  <div class="column">QT</div>
-  <div class="column">DESCRICÃO</div>
-</div>
-  
-<div class="grid-container">
-  <div class="column">Item 1</div>
-  <div class="column">Item 2</div>
-  <div class="column">Item 3</div>
-  <div class="column">Item 4</div>
-  <div class="column">Item 5</div>
-  <div class="column">Item 6</div>
-</div>
-
-
+  <div class="grid-container">
+    <div class="item">Pão</div>
+    <div class="item">Leite</div>
+    <div class="item">Ovos</div>
+    <div class="item">Frutas</div>
+    <div class="item">Legumes</div>
+    <div class="item">Carne</div>
+    <div class="item">Arroz</div>
+    <div class="item">Massa</div>
+    <div class="item">Manteiga</div>
+  </div>
 </body>
 </html>
